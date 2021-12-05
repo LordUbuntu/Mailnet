@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/main.css">
+		<title>Mailer Demo</title>
+<style>
+.email {
+	width: 300px;
+	margin: 0 auto;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.email h1 {
+	text-align: center;
+	color: #4d4d4d;
+	font-size: 2em;
+	padding: 20px 0 20px 0;
+}
+.email textarea {
+	color: #4d4d4d;
+	font-size: 1em;
+	width: 100%;
+}
+.email input[type="email"],
+.email input[type="text"] {
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #dddddd;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+.email input[type="file"] {
+	padding: 15px 0 15px 0;
+	font-weight: bold;
+}
+.email input[type="submit"] {
+	width: 100%;
+	padding: 15px;
+	background-color: #535b63;
+	border: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-weight: bold;
+	color: #ffffff
+}
+</style>
+	</head>
+	<body>
+		<div class="email">
+			<h1>Email Form</h1>
+			<form action="send" method="POST" id="email-form">
+				<input type="email" name="from" placeholder="From" required>
+				<input type="email" name="to" placeholder="To" required>
+				<input type="text" name="subject" placeholder="Subject" required>
+				<textarea name="message" form="email-form">Message</textarea>
+				<input type="file" name="file">
+				<input type="submit" name="submit">
+			</form>
+		</div>
+	</body>
+</html>

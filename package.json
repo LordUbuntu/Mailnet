@@ -1,0 +1,20 @@
+{
+  "name": "Mailnet",
+  "version": "1.0.0",
+  "description": "CMPT211 Assignment 4",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Jacobus Burger",
+  "license": "ISC",
+  "dependencies": {
+    "delay": "4.2.0",
+    "formidable": "1.2.1",
+    "fs-extra": "7.0.1",
+    "mysql": "2.17.1",
+    "nodemailer": "6.1.0",
+    "package.json": "^2.0.1"
+  }
+}
